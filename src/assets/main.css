@@ -1,0 +1,13 @@
+@import './base.css';
+
+#app {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Prevent unwanted flex behavior */
+body.login-page-body #app {
+  max-width: 100%;
+  padding: 0;
+}
+

@@ -1,0 +1,209 @@
+/* ===========================================================================
+ROOT PALETTE VARIABLES
+=========================================================================== */
+
+:root {
+  /* Base colors */
+  --vt-c-white: #FFFFFF;
+  --vt-c-off-white: #fdfdfd;
+  --vt-c-grey: color-mix(in srgb, var(--vt-c-white), black 10%);
+  --vt-c-black: #000000;
+  --vt-c-green: #AAFF9E;
+  --vt-c-purple: #A29EFF;
+  --vt-c-red: #FF9E9E;
+  --vt-c-orange: #ffca9e;
+  --vt-c-yellow: #FFF79E;
+  --vt-c-pink: #FF9EFD;
+  --vt-c-blue: #62b6ff;
+
+  /* Darker colors */
+  --vt-c-grey-dark: color-mix(in srgb, var(--vt-c-white), black 70%);
+  --vt-c-green-dark: color-mix(in srgb, var(--vt-c-green), black 30%);
+  --vt-c-purple-dark: color-mix(in srgb, var(--vt-c-purple), black 40%);
+  --vt-c-red-dark: color-mix(in srgb, var(--vt-c-red), black 30%);
+  --vt-c-orange-dark: color-mix(in srgb, var(--vt-c-orange), black 30%);
+  --vt-c-yellow-dark: color-mix(in srgb, var(--vt-c-yellow), black 30%);
+  --vt-c-pink-dark: color-mix(in srgb, var(--vt-c-pink), black 30%);
+  --vt-c-blue-dark: color-mix(in srgb, var(--vt-c-blue), black 30%);
+
+  /* Lighter colors */
+  --vt-c-grey-medium: color-mix(in srgb, var(--vt-c-white), black 50%);
+  --vt-c-grey-light: color-mix(in srgb, var(--vt-c-white), black 5%);
+  --vt-c-red-light: color-mix(in srgb, var(--vt-c-red), white 40%);
+  --vt-c-green-light: color-mix(in srgb, var(--vt-c-green), white 40%);
+  --vt-c-purple-light: color-mix(in srgb, var(--vt-c-purple), white 40%);
+  --vt-c-orange-light: color-mix(in srgb, var(--vt-c-orange), white 40%);
+  --vt-c-yellow-light: color-mix(in srgb, var(--vt-c-yellow), white 40%);
+  --vt-c-pink-light: color-mix(in srgb, var(--vt-c-pink), white 40%);
+  --vt-c-blue-light: color-mix(in srgb, var(--vt-c-blue), white 40%);
+}
+
+/* ===========================================================================
+SEMANTIC VARIABLES
+=========================================================================== */
+
+:root {
+  --input-underline-text: var(--vt-c-grey);
+  --input-underline-focus: var(--vt-c-pink);
+  --font-description-text: var(--vt-c-grey-dark);
+
+  --edit-exercise-background: var(--vt-c-grey);
+
+  --green-button: var(--vt-c-green);
+  --purple-button: var(--vt-c-purple);
+
+  --vt-c-white-soft: var(--vt-c-white);
+  --vt-c-white-mute: var(--vt-c-grey);
+
+  --vt-c-black-soft: var(--vt-c-grey);
+  --vt-c-black-mute: var(--vt-c-grey);
+
+  --vt-c-indigo: var(--vt-c-purple);
+
+  --vt-c-divider-dark-1: var(--vt-c-grey);
+
+  --vt-c-text-dark-2: var(--vt-c-grey);
+
+  --vt-c-border: var(--vt-c-blue);
+  --vt-c-pill: var(--vt-c-cyan);
+
+  /* CIRCLE PROGRESS */
+  --circle-max-size: 80px;
+  --circle-color: var(--vt-c-green);
+  --circle-bg-color: var(--vt-c-grey);
+  --circle-text-color: var(--vt-c-black);
+  --circle-stroke-width: 2;
+
+  /* EXERCISE ITEM */
+  --exercise-card-border: var(--vt-c-grey);
+  --exercise-b-shadow: rgba(0, 0, 0, 0.05);
+  --description-text: var(--vt-c-black);
+  --weight-text: var(--vt-c-grey);
+  --attempt-btn-color: var(--vt-c-blue);
+  --attempt-btn-border: var(--vt-c-purple);
+  --attempt-btn-hover: var(--vt-c-cyan);
+  --feedback-btn-color: var(--vt-c-green);
+  --feedback-btn-border: var(--vt-c-green-dark);
+
+  /* EXERCISE ITEM TEACHER */
+  --delete-btn-color: var(--vt-c-red);
+  --delete-btn-border: var(--vt-c-red-dark);
+
+  /* EXERCISE ITEM TEACHER DRAFT */
+  --exercise-card-background: var(--vt-c-grey);
+
+  /* MATERIAL ITEM TEACHER */
+  --edit-btn-color: var(--vt-c-blue);
+  --title-border: var(--vt-c-grey);
+
+  /* NAVBAR */
+  --navbar-color: var(--vt-c-white);
+  --exit-btn-color: var(--vt-c-black);
+
+  /* QUESTION */
+  --question-card-border: var(--vt-c-grey);
+
+  /* TOAST */
+  --toast-background-color: var(--vt-c-black);
+  --toast-color: var(--vt-c-white);
+  --toast-succ-color: var(--vt-c-green);
+  --toast-error-color: var(--vt-c-red);
+
+  /* TOPIC ITEM */
+  --progress-color: var(--vt-c-grey);
+  --progress-bar: var(--vt-c-green-dark);
+  --progress-fill: var(--vt-c-green);
+  --teacher-tag-background-color: var(--vt-c-yellow);
+  --teacher-tag-border: var(--vt-c-yellow-dark);
+  --progress-red: var(--vt-c-red);
+  --progress-orange: var(--vt-c-yellow);
+
+  /* LOGIN PAGE */
+  --gradient-1: var(--vt-c-blue);
+  --gradient-2: var(--vt-c-purple-dark);
+  --wave-1: var(--vt-c-pink);
+  --wave-3: var(--vt-c-cyan);
+  --login-card: var(--vt-c-grey);
+
+  /* TOPIC VIEW */
+  --header-color: var(--vt-c-blue);
+
+  /* PROFILE VIEW */
+  --profile-section-color: var(--vt-c-grey);
+  --info-card-border: var(--vt-c-grey);
+  --topic-link-hover: var(--vt-c-blue);
+
+  /* MATERIALS VIEW */
+  --overlay-background: var(--vt-c-white);
+
+  /* EXERCISE LIST VIEW */
+  --tab-hover: var(--vt-c-blue);
+
+  /* SAVE BUTTON */
+  --required-node: var(--vt-c-black);
+}
+
+
+/* ===========================================================================
+  SEMANTIC COLOR VARIABLES
+  =========================================================================== */
+
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white);
+  --color-background-mute: var(--vt-c-white);
+
+  --color-border: var(--vt-c-grey);
+  --color-border-hover: var(--vt-c-grey);
+
+  --color-heading: var(--vt-c-black);
+  --color-text: var(--vt-c-white);
+
+  --section-gap: 160px;
+}
+
+/* ===========================================================================
+  BASE STYLES
+  =========================================================================== */
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/src/assets/fonts/Circular/CircularStd-Book.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/src/assets/fonts/Circular/CircularStd-Bold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('/src/assets/fonts/Circular/CircularStd-Black.ttf') format('truetype');
+  font-weight: bold;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.3s, background-color 0.3s;
+  font-family: 'Circular', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
